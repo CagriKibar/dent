@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnaDent Diş Kliniği | Modern Diş Sağlığı Hizmetleri</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+  <!-- Ön Yükleyici -->
+  <div class="preloader">
+    <div class="loader">
+      <i class="fas fa-tooth fa-spin"></i>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>0212 123 45 67</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@anadent.com.tr</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Levent Mah. Sağlık Sok. No:24, İstanbul</span>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">
+            <span class="logo-text">Ana<span class="highlight">Dent</span></span>
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Ana Sayfa</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li class="dropdown">
+            <a href="hizmetlerimiz.html">Hizmetlerimiz <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="implant.html">İmplant</a></li>
+              <li><a href="ortodonti.html">Ortodonti</a></li>
+              <li><a href="estetik-dis.html">Estetik Diş Hekimliği</a></li>
+              <li><a href="beyazlatma.html">Diş Beyazlatma</a></li>
+              <li><a href="cocuk-dis.html">Çocuk Diş Hekimliği</a></li>
+            </ul>
+          </li>
+          <li><a href="doktorlarimiz.html">Doktorlarımız</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+        <div class="appointment-btn">
+          <a href="randevu.html" class="btn primary-btn">Randevu Al</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+      <h1 data-aos="fade-up" data-aos-duration="1000">Sağlıklı Gülüşler İçin<br><span>Modern Diş Hekimliği</span></h1>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Alanında uzman doktorlarımız ve en son teknoloji cihazlarımızla sizin ve ailenizin ağız ve diş sağlığı için buradayız.</p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <a href="randevu.html" class="btn primary-btn">Hemen Randevu Al</a>
+        <a href="#services" class="btn secondary-btn">Hizmetlerimiz</a>
+      </div>
+    </div>
+    <div class="hero-cards">
+      <div class="hero-card" data-aos="fade-up" data-aos-duration="800">
+        <div class="icon">
+          <i class="fas fa-calendar-check"></i>
+        </div>
+        <h3>Online Randevu</h3>
+        <p>7/24 online randevu sistemi ile kolayca randevu alın</p>
+      </div>
+      <div class="hero-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+        <div class="icon">
+          <i class="fas fa-certificate"></i>
+        </div>
+        <h3>Uzman Kadro</h3>
+        <p>Alanında uzman diş hekimleri ile kaliteli hizmet</p>
+      </div>
+      <div class="hero-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+        <div class="icon">
+          <i class="fas fa-tooth"></i>
+        </div>
+        <h3>Modern Teknoloji</h3>
+        <p>En son teknoloji cihazlarla üst düzey tedavi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hakkımızda Kısa Bölümü -->
+  <section id="about-short" class="section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+          <img src="https://images.pexels.com/photos/3845725/pexels-photo-3845725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AnaDent Klinik">
+          <div class="experience-badge">
+            <span class="number">15+</span>
+            <span class="text">Yıllık<br>Deneyim</span>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+          <div class="section-title">
+            <h6>Hakkımızda</h6>
+            <h2>Modern ve Güvenilir <span>Diş Hekimliği</span> Hizmetleri</h2>
+          </div>
+          <p>AnaDent olarak, İstanbul'da 15 yılı aşkın süredir, modern ve konforlu kliniğimizde yüksek kalitede diş hekimliği hizmetleri sunmaktayız. Alanında uzman kadromuz ve en son teknoloji cihazlarımızla, hastalarımızın sağlığını ve memnuniyetini en üst düzeyde tutmayı hedefliyoruz.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>En Son Teknoloji Cihazlar</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Konforlu Tedavi Ortamı</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Uzman Hekim Kadrosu</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Steril Klinik Ortamı</span>
+            </div>
+          </div>
+          <a href="hakkimizda.html" class="btn primary-btn">Daha Fazla Bilgi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servisler Bölümü -->
+  <section id="services" class="section bg-light">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h6>Hizmetlerimiz</h6>
+        <h2>Sunduğumuz <span>Tedavi</span> Hizmetleri</h2>
+        <p>Ağız ve diş sağlığınız için sunduğumuz kapsamlı tedavi hizmetleri ile tanışın.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000">
+          <div class="service-icon">
+            <i class="fas fa-teeth"></i>
+          </div>
+          <h3>İmplant</h3>
+          <p>Eksik dişlerinizi fonksiyonel ve estetik olarak tamamlamak için uygulanan ileri teknoloji tedavi yöntemi.</p>
+          <a href="implant.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="100">
+          <div class="service-icon">
+            <i class="fas fa-teeth-open"></i>
+          </div>
+          <h3>Ortodonti</h3>
+          <p>Diş ve çene bozukluklarının düzeltilmesi için uygulanan şeffaf plak, metal ve seramik braket tedavileri.</p>
+          <a href="ortodonti.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+          <div class="service-icon">
+            <i class="fas fa-tooth"></i>
+          </div>
+          <h3>Estetik Diş Hekimliği</h3>
+          <p>Gülüş tasarımı, lamina, veneer gibi uygulamalarla daha estetik gülüşlere kavuşmanızı sağlayan tedaviler.</p>
+          <a href="estetik-dis.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+          <div class="service-icon">
+            <i class="fas fa-sparkles"></i>
+          </div>
+          <h3>Diş Beyazlatma</h3>
+          <p>Ofis tipi ve ev tipi beyazlatma sistemleriyle dişlerinizde doğal beyazlığı yakalayabileceğiniz uygulamalar.</p>
+          <a href="beyazlatma.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+          <div class="service-icon">
+            <i class="fas fa-child"></i>
+          </div>
+          <h3>Çocuk Diş Hekimliği</h3>
+          <p>Çocukların diş sağlığını korumak ve tedavi etmek için özel yaklaşımlar ve uygulamalar.</p>
+          <a href="cocuk-dis.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="service-card" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="500">
+          <div class="service-icon">
+            <i class="fas fa-teeth"></i>
+          </div>
+          <h3>Kanal Tedavisi</h3>
+          <p>Diş sinirinin iltihaplanması durumunda uygulanan, dişi çekmeden kurtaran tedavi yöntemi.</p>
+          <a href="kanal-tedavisi.html" class="service-link">
+            Detaylı Bilgi <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neden Biz Bölümü -->
+  <section id="why-us" class="section">
+    <div class="container">
+      <div class="why-us-content">
+        <div class="why-us-text" data-aos="fade-right" data-aos-duration="1000">
+          <div class="section-title">
+            <h6>Neden Biz?</h6>
+            <h2>Neden <span>AnaDent</span>'i Tercih Etmelisiniz?</h2>
+          </div>
+          <p>AnaDent olarak, her hastamıza özel tedavi planları ve konforlu bir tedavi deneyimi sunuyoruz. Modern teknolojiler ve uzman kadromuzla fark yaratıyoruz.</p>
+          <div class="why-us-features">
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="800">
+              <div class="feature-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Uzman Doktor Kadrosu</h4>
+                <p>Alanında uzmanlaşmış, deneyimli ve sürekli kendini geliştiren diş hekimlerimizle hizmet veriyoruz.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="feature-icon">
+                <i class="fas fa-microscope"></i>
+              </div>
+              <div class="feature-content">
+                <h4>İleri Teknoloji</h4>
+                <p>En son teknoloji cihazlar ve malzemelerle tedavilerinizi hızlı ve ağrısız bir şekilde gerçekleştiriyoruz.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="feature-icon">
+                <i class="fas fa-shield-virus"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Sterilizasyon</h4>
+                <p>En üst düzey sterilizasyon standartlarıyla güvenli bir tedavi ortamı sağlıyoruz.</p>
+              </div>
+            </div>
+            <div class="feature-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Randevu Sistemi</h4>
+                <p>Online randevu sistemi ve esnek çalışma saatleriyle size kolaylık sağlıyoruz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-us-stats" data-aos="fade-left" data-aos-duration="1000">
+          <div class="stat-card">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-title">Yıllık Deneyim</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="12000">0</div>
+            <div class="stat-title">Mutlu Hasta</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="8">0</div>
+            <div class="stat-title">Uzman Doktor</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-title">Ödül ve Sertifika</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doktorlarımız Bölümü -->
+  <section id="doctors" class="section bg-light">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h6>Ekibimiz</h6>
+        <h2>Uzman <span>Doktorlarımız</span> ile Tanışın</h2>
+        <p>Alanında uzmanlaşmış, deneyimli diş hekimlerimizle tanışın.</p>
+      </div>
+      <div class="swiper doctors-swiper">
+        <div class="swiper-wrapper">
+          <!-- Doktor 1 -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-up" data-aos-duration="800">
+              <div class="doctor-image">
+                <img src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Ali Yılmaz">
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="doctor-info">
+                <h4>Dr. Ali Yılmaz</h4>
+                <p class="speciality">İmplantoloji Uzmanı</p>
+                <div class="experience">12 Yıllık Deneyim</div>
+              </div>
+            </div>
+          </div>
+          <!-- Doktor 2 -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+              <div class="doctor-image">
+                <img src="https://images.pexels.com/photos/5214956/pexels-photo-5214956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Ayşe Demir">
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="doctor-info">
+                <h4>Dr. Ayşe Demir</h4>
+                <p class="speciality">Ortodonti Uzmanı</p>
+                <div class="experience">10 Yıllık Deneyim</div>
+              </div>
+            </div>
+          </div>
+          <!-- Doktor 3 -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+              <div class="doctor-image">
+                <img src="https://images.pexels.com/photos/5215009/pexels-photo-5215009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Mehmet Kaya">
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="doctor-info">
+                <h4>Dr. Mehmet Kaya</h4>
+                <p class="speciality">Estetik Diş Hekimi</p>
+                <div class="experience">8 Yıllık Deneyim</div>
+              </div>
+            </div>
+          </div>
+          <!-- Doktor 4 -->
+          <div class="swiper-slide">
+            <div class="doctor-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+              <div class="doctor-image">
+                <img src="https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dr. Zeynep Şahin">
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="doctor-info">
+                <h4>Dr. Zeynep Şahin</h4>
+                <p class="speciality">Çocuk Diş Hekimi</p>
+                <div class="experience">9 Yıllık Deneyim</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hasta Yorumları -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h6>Yorumlar</h6>
+        <h2>Hastalarımızın <span>Görüşleri</span></h2>
+        <p>Bizi tercih eden hastalarımızın değerli geri bildirimleri</p>
+      </div>
+      <div class="swiper testimonials-swiper">
+        <div class="swiper-wrapper">
+          <!-- Yorum 1 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="800">
+              <div class="quote-icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <p class="testimonial-text">AnaDent'te implant tedavim sorunsuz bir şekilde tamamlandı. Doktorumun profesyonel yaklaşımı ve klinik personelinin sıcakkanlı tutumu için çok teşekkür ederim. Sonuçtan çok memnunum.</p>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ahmet Y.">
+                <div class="author-info">
+                  <h4>Ahmet Y.</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Yorum 2 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+              <div class="quote-icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <p class="testimonial-text">Yıllardır diş doktoruna gitme korkum vardı. AnaDent'te Dr. Ayşe Hanım sayesinde bu korkumu yendim. Şimdi düzenli kontrollere gidiyorum. Sabırlı yaklaşımları için minnettarım.</p>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Selin K.">
+                <div class="author-info">
+                  <h4>Selin K.</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Yorum 3 -->
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+              <div class="quote-icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <p class="testimonial-text">Ortodonti tedavim için birçok klinik araştırdım ve AnaDent'i tercih ettim. Bu seçimimden dolayı çok mutluyum. Tedavi sürecim beklediğimden hızlı ve konforlu geçti. Ekip harika!</p>
+              <div class="testimonial-author">
+                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Mert B.">
+                <div class="author-info">
+                  <h4>Mert B.</h4>
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Bölümü -->
+  <section id="blog" class="section bg-light">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up" data-aos-duration="1000">
+        <h6>Blog</h6>
+        <h2>Diş Sağlığı <span>Yazılarımız</span></h2>
+        <p>Ağız ve diş sağlığı hakkında bilgilendirici yazılarımız</p>
+      </div>
+      <div class="blog-grid">
+        <!-- Blog Yazısı 1 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/4269699/pexels-photo-4269699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Diş Beyazlatma Hakkında">
+            <div class="blog-date">
+              <span class="day">12</span>
+              <span class="month">Haz</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category">Estetik Diş Hekimliği</div>
+            <h3 class="blog-title">Diş Beyazlatma Hakkında Merak Edilenler</h3>
+            <p class="blog-text">Diş beyazlatma işlemleri, profesyonel uygulamalar ve ev tipi beyazlatma sistemleri hakkında merak ettiğiniz her şey...</p>
+            <a href="blog-detay.html" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Blog Yazısı 2 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Çocuklarda Diş Sağlığı">
+            <div class="blog-date">
+              <span class="day">05</span>
+              <span class="month">Haz</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category">Çocuk Diş Hekimliği</div>
+            <h3 class="blog-title">Çocuklarda Diş Sağlığını Koruma Yöntemleri</h3>
+            <p class="blog-text">Çocuklarda ağız ve diş sağlığını korumak için ebeveynlerin bilmesi gerekenler ve koruyucu tedavi yöntemleri...</p>
+            <a href="blog-detay.html" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Blog Yazısı 3 -->
+        <div class="blog-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/6627600/pexels-photo-6627600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="İmplant Tedavisi">
+            <div class="blog-date">
+              <span class="day">28</span>
+              <span class="month">May</span>
+            </div>
+          </div>
+          <div class="blog-content">
+            <div class="blog-category">İmplantoloji</div>
+            <h3 class="blog-title">Modern İmplant Tedavisinde Son Teknolojiler</h3>
+            <p class="blog-text">İmplant tedavilerinde kullanılan yeni teknolojiler, başarı oranını artıran faktörler ve tedavi süreci hakkında bilgiler...</p>
+            <a href="blog-detay.html" class="blog-link">Devamını Oku <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+        <a href="blog.html" class="btn primary-btn">Tüm Blog Yazıları</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Randevu Formu -->
+  <section id="appointment" class="section">
+    <div class="container">
+      <div class="appointment-wrapper">
+        <div class="appointment-content" data-aos="fade-right" data-aos-duration="1000">
+          <div class="section-title">
+            <h6>Randevu</h6>
+            <h2>Online <span>Randevu</span> Alın</h2>
+          </div>
+          <p>Aşağıdaki formu doldurarak hızlıca online randevu alabilirsiniz. Formunuz bize ulaştıktan sonra en kısa sürede sizinle iletişime geçeceğiz.</p>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-text">
+                <h5>Bizi Arayın</h5>
+                <p>0212 123 45 67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div class="contact-text">
+                <h5>E-posta Gönderin</h5>
+                <p>info@anadent.com.tr</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="contact-text">
+                <h5>Bizi Ziyaret Edin</h5>
+                <p>Levent Mah. Sağlık Sok. No:24, İstanbul</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appointment-form" data-aos="fade-left" data-aos-duration="1000">
+          <form id="randevu-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Telefon Numaranız" required>
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <input type="date" id="date" name="date" required>
+                <i class="fas fa-calendar"></i>
+              </div>
+              <div class="form-group">
+                <select id="time" name="time" required>
+                  <option value="">Saat Seçin</option>
+                  <option value="09:00">09:00</option>
+                  <option value="10:00">10:00</option>
+                  <option value="11:00">11:00</option>
+                  <option value="12:00">12:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+                  <option value="16:00">16:00</option>
+                  <option value="17:00">17:00</option>
+                </select>
+                <i class="fas fa-clock"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <select id="service" name="service" required>
+                <option value="">Hizmet Seçin</option>
+                <option value="implant">İmplant</option>
+                <option value="ortodonti">Ortodonti</option>
+                <option value="estetik">Estetik Diş Hekimliği</option>
+                <option value="beyazlatma">Diş Beyazlatma</option>
+                <option value="cocuk">Çocuk Diş Hekimliği</option>
+                <option value="kanal">Kanal Tedavisi</option>
+                <option value="cerrahi">Ağız ve Çene Cerrahisi</option>
+                <option value="diger">Diğer</option>
+              </select>
+              <i class="fas fa-tooth"></i>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Mesajınız (İsteğe Bağlı)"></textarea>
+              <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn primary-btn w-100">Randevu Talep Et</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Harita Bölümü -->
+  <section id="map" class="section no-padding">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48167.60059124166!2d28.979626606659372!3d41.07204507174288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab63f6f8f8d69%3A0x68c5c79d92e2ub71!2sLevent%2C%20%C4%B0stanbul!5e0!3m2!1str!2str!4v1684323487653!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-widgets">
+          <div class="footer-widget about-widget">
+            <div class="footer-logo">
+              <span class="logo-text">Ana<span class="highlight">Dent</span></span>
+            </div>
+            <p>AnaDent olarak, İstanbul'da 15 yılı aşkın süredir ağız ve diş sağlığı hizmetleri sunmaktayız. Alanında uzman kadromuz ve modern teknolojilerimizle yanınızdayız.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-widget links-widget">
+            <h4 class="widget-title">Hızlı Linkler</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+              <li><a href="doktorlarimiz.html">Doktorlarımız</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget services-widget">
+            <h4 class="widget-title">Hizmetlerimiz</h4>
+            <ul class="footer-links">
+              <li><a href="implant.html">İmplant</a></li>
+              <li><a href="ortodonti.html">Ortodonti</a></li>
+              <li><a href="estetik-dis.html">Estetik Diş Hekimliği</a></li>
+              <li><a href="beyazlatma.html">Diş Beyazlatma</a></li>
+              <li><a href="cocuk-dis.html">Çocuk Diş Hekimliği</a></li>
+              <li><a href="kanal-tedavisi.html">Kanal Tedavisi</a></li>
+            </ul>
+          </div>
+          <div class="footer-widget contact-widget">
+            <h4 class="widget-title">İletişim</h4>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Levent Mah. Sağlık Sok. No:24, İstanbul</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <p>0212 123 45 67</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>info@anadent.com.tr</p>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-clock"></i>
+                <p>Pazartesi - Cumartesi: 09:00 - 18:00<br>Pazar: Kapalı</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="copyright">
+          <p>© 2025 AnaDent Diş Kliniği. Tüm Hakları Saklıdır.</p>
+        </div>
+        <div class="footer-bottom-links">
+          <a href="gizlilik-politikasi.html">Gizlilik Politikası</a>
+          <a href="cerez-politikasi.html">Çerez Politikası</a>
+          <a href="kvkk.html">KVKK</a>
+        </div>
+      </div>
+    </div>
+    <div class="whatsapp-float">
+      <a href="https://wa.me/902121234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <div class="scroll-top">
+      <i class="fas fa-angle-up"></i>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

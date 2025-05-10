@@ -1,0 +1,434 @@
+/* AnaDent Diş Kliniği Responsive CSS */
+
+/* Tablet - Orta Boy Ekranlar */
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  h1 {
+    font-size: 42px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+  }
+  
+  .service-card {
+    padding: 30px 20px;
+  }
+  
+  .doctor-image img {
+    height: 300px;
+  }
+  
+  .hero-cards {
+    gap: 15px;
+  }
+  
+  .hero-card {
+    max-width: 240px;
+    padding: 20px;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-widgets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .appointment-form,
+  .appointment-content {
+    padding: 40px 30px;
+  }
+  
+  .appointment-page-form {
+    padding: 30px;
+  }
+}
+
+/* Tablet - Küçük Boy Ekranlar */
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 40px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+  }
+  
+  .hero-cards {
+    position: static;
+    margin-top: 40px;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero-card {
+    max-width: 220px;
+    margin-bottom: 15px;
+  }
+  
+  .about-content,
+  .why-us-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .experience-badge {
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .appointment-wrapper {
+    flex-direction: column;
+  }
+  
+  .col-lg-4,
+  .col-lg-6,
+  .col-lg-8 {
+    width: 100%;
+  }
+  
+  .why-us-stats {
+    margin-top: 30px;
+  }
+  
+  .blog-list .blog-item {
+    flex-direction: column;
+  }
+  
+  .blog-list .blog-image {
+    flex: 1;
+  }
+  
+  .blog-list .blog-image img {
+    height: 250px;
+  }
+  
+  .blog-sidebar {
+    margin-top: 50px;
+    position: static;
+  }
+  
+  /* Navigasyon */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100vh;
+    background-color: var(--white-color);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 20px 30px;
+    transition: all 0.4s ease;
+    z-index: 998;
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-menu li {
+    width: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .nav-menu li a {
+    display: block;
+    padding: 12px 0;
+  }
+  
+  .nav-menu li a:after {
+    display: none;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 0 0 0 15px;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    display: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: none;
+  }
+  
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown > a i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown.active > a i {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .menu-toggle {
+    display: flex;
+    z-index: 999;
+  }
+  
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 997;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+  
+  .nav-overlay.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Mobil Cihazlar */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content p {
+    font-size: 16px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+  }
+  
+  .hero-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-card {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-widgets {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .footer-bottom-links {
+    justify-content: center;
+  }
+  
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-us-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .scroll-top {
+    bottom: 20px;
+    right: 90px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .appointment-page-form label {
+    font-size: 14px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .appointment-experience {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .appointment-experience .number {
+    font-size: 22px;
+  }
+  
+  .appointment-experience .text {
+    font-size: 10px;
+  }
+  
+  .top-bar {
+    display: none;
+  }
+  
+  .page-header {
+    padding: 100px 0 60px;
+  }
+  
+  .page-header h1 {
+    font-size: 32px;
+  }
+}
+
+/* Küçük Mobil Cihazlar */
+@media (max-width: 575px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .section {
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    margin-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 24px;
+  }
+  
+  .appointment-form,
+  .appointment-content {
+    padding: 30px 20px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-item i {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .footer-widget .contact-item {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .appointment-page-form {
+    padding: 20px;
+  }
+  
+  .whatsapp-float a,
+  .scroll-top {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+  
+  .scroll-top {
+    right: 75px;
+  }
+}
